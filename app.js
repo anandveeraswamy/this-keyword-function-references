@@ -39,8 +39,7 @@ class NameGenerator {
         this.messageElement.textContent = "Name added!";
         this.messageElement.style.color = "green";
     }
-
-    // ❌ TODO: Implement this method to remove the last added name
+    
     removeLastName() {
         /* Students complete this */
         this.names.pop();
@@ -50,8 +49,7 @@ class NameGenerator {
         }
 
     }
-
-    // ❌ TODO: Implement this method to shuffle names and reset the index
+    
     shuffleNames() {
         /* Students complete this */
         this.names.sort(
