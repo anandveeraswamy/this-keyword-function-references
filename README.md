@@ -1,1 +1,1 @@
-# this-keyword-function-references
+The "this" keyword is the source of a lot of confusion in JavaScript world. So are function references (function calls without parentheses). What are "this" and those function references all about and why do you use them in JavaScript?
