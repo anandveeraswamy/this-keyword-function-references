@@ -1,20 +1,31 @@
 class NameField {
     constructor(name) {
-        const field = document.createElement('li'); // create a <li> element
-        field.textContent = name; // set the text content of the <li> element
-        const nameListHook = document.querySelector('#names'); // get the <ul> element
-        nameListHook.appendChild(field); // append the <li> element to the <ul> element
+        const field = document.createElement('li');
+        field.textContent = name;
+        const nameListHook = document.querySelector('#names');
+        nameListHook.appendChild(field);
     }
 }
 
 class NameGenerator {
     constructor() {
         const btn = document.querySelector('button');
-        btn.addEventListener('click', ???);
+        this.names = ['Anand', 'Dan', 'Josh'];
+        this.currentName = 0;
+        btn.addEventListener('click', () => {
+            this.addName();
+        });
+        // Alternative:
+        // btn.addEventListener('click', this.addName.bind(this));
     }
-
+    
     addName() {
-        const name = new NameField("Max");
+        console.log(this);
+        const name = new NameField(this.names[this.currentName]);
+        this.currentName++;
+        if (this.currentName >= this.names.length) {
+            this.currentName = 0;
+        }
     }
 }
 
