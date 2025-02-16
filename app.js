@@ -20,8 +20,7 @@ class NameGenerator {
         document.querySelector("#btn-remove").addEventListener('click', this.removeLastName.bind(this) );
        
 
-        // ✅ Implement Shuffle Names button using an arrow function
-        // document.querySelector("#btn-shuffle").addEventListener('click', /* Students complete this */ );
+        // ✅ Implement Shuffle Names button using an arrow function        
         document.querySelector("#btn-shuffle").addEventListener('click', () => {
             this.shuffleNames();
         });
