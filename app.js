@@ -14,7 +14,7 @@ class NameGenerator {
     }
 
     addName() {
-        const name = new NameField("Max");
+        const name = new NameField("Anand");
     }
 }
 
