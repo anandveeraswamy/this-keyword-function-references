@@ -16,13 +16,13 @@ class NameGenerator {
         // ✅ Add Name button - Implemented (Uses bind)
         document.querySelector("#btn-add").addEventListener('click', this.addName.bind(this));
 
-        // ❌ TODO: Implement Remove Last Name button using the bind function
+        // ✅ Implement Remove Last Name button using the bind function
         // document.querySelector("#btn-remove").addEventListener('click', this.removeLastName.bind(this) );
         document.querySelector("#btn-remove").addEventListener('click', () => {
             this.removeLastName();
         });
 
-        // ❌ TODO: Implement Shuffle Names button using an arrow function
+        // ✅ Implement Shuffle Names button using an arrow function
         // document.querySelector("#btn-shuffle").addEventListener('click', /* Students complete this */ );
         document.querySelector("#btn-shuffle").addEventListener('click', () => {
             this.shuffleNames();
@@ -45,8 +45,7 @@ class NameGenerator {
         this.messageElement.textContent = "Name added!";
         this.messageElement.style.color = "green";
     }
-
-    // ❌ TODO: Implement this method to remove the last added name
+    
     removeLastName() {
         /* Students complete this */
         this.names.pop();
@@ -56,8 +55,7 @@ class NameGenerator {
         }
 
     }
-
-    // ❌ TODO: Implement this method to shuffle names and reset the index
+    
     shuffleNames() {
         /* Students complete this */
         this.names.sort(
