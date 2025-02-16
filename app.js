@@ -16,7 +16,7 @@ class NameGenerator {
         // ✅ Add Name button - Implemented (Uses bind)
         document.querySelector("#btn-add").addEventListener('click', this.addName.bind(this));
 
-        // ❌ TODO: Implement Remove Last Name button
+        // ❌ TODO: Implement Remove Last Name button using bind
        
 
         // ❌ TODO: Implement Shuffle Names button using an arrow function
@@ -40,8 +40,7 @@ class NameGenerator {
         this.messageElement.style.color = "green";
     }
     
-    removeLastName() {
-        /* Students complete this */
+    removeLastName() {        
         this.names.pop();
         this.listParent = document.querySelector("#names");
         if (this.listParent.lastElementChild) {
@@ -50,8 +49,7 @@ class NameGenerator {
 
     }
     
-    shuffleNames() {
-        /* Students complete this */
+    shuffleNames() {        
         this.names.sort(
             () => Math.random() - 0.5 // shuffle the names array
         );
